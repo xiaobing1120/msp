@@ -1,9 +1,26 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  layout: {},
+  layout: {
+    name: 'Ant Design',
+    locale: true,
+  },
   routes: [
-    { path: '/', component: '@/pages/HomePage/index' },
-    { path: '/redux', component: '@/pages/ReduxPage/index' },
+    {
+      path: '/',
+      component: '@/pages/HomePage/index',
+      menu: {
+        name: '欢迎',
+        icon: 'A',
+      },
+    },
+    {
+      path: '/redux',
+      component: '@/pages/ReduxPage/index',
+      menu: {
+        name: 'ReduxPage',
+        icon: 'B',
+      },
+    },
   ],
 });
