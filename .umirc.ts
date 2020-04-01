@@ -22,5 +22,13 @@ export default defineConfig({
         icon: 'B',
       },
     },
+    {
+      path: '/ts',
+      component: '@/pages/TsPage/index',
+      menu: {
+        name: 'TsPage',
+        icon: 'C',
+      },
+    },
   ],
 });

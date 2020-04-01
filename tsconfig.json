@@ -13,6 +13,7 @@
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
     },
+    //"types": ["react-syntax-highlighter"],
     "allowSyntheticDefaultImports": true
   }
 }
