@@ -9,26 +9,47 @@ export default defineConfig({
     {
       path: '/',
       component: '@/pages/HomePage/index',
+      exact: true,
       menu: {
         name: '欢迎',
-        icon: 'A',
+        //icon: 'A'
       },
     },
     {
       path: '/redux',
       component: '@/pages/ReduxPage/index',
+      exact: true,
       menu: {
         name: 'ReduxPage',
-        icon: 'B',
+        //icon: 'B'
       },
     },
     {
       path: '/ts',
-      component: '@/pages/TsPage/index',
       menu: {
         name: 'TsPage',
-        icon: 'C',
+        //icon: 'C'
       },
+      routes: [
+        {
+          path: 'base',
+          component: '@/pages/TsPage/BasePage',
+          exact: true,
+          menu: {
+            name: '基础类型',
+            //icon: 'C'
+          },
+        },
+        {
+          path: 'variable',
+          component: '@/pages/TsPage/VariablePage',
+          exact: true,
+          menu: {
+            name: '变量声明',
+            //icon: 'D'
+          },
+        },
+      ],
     },
   ],
 });
