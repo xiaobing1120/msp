@@ -3,7 +3,7 @@ import { Highlighter, HighlighterText } from '@/components/Highlighter';
 import { code } from './code';
 import './index.less';
 
-console.log(code.default);
+//console.log(code.default);
 
 export default () => {
   return (

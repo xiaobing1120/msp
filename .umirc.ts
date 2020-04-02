@@ -49,6 +49,15 @@ export default defineConfig({
             //icon: 'D'
           },
         },
+        {
+          path: 'interface',
+          component: '@/pages/TsPage/InterfacePage',
+          exact: true,
+          menu: {
+            name: '接口',
+            //icon: 'D'
+          },
+        },
       ],
     },
   ],
